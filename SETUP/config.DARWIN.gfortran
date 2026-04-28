@@ -28,6 +28,7 @@
    NCARG_ROOT ?= ${NCARG_ROOT}
   LIBPNG_HOME ?= ${LIBPNG_HOME}
 FREETYPE_HOME ?= ${FREETYPE_HOME}
+SUNDIALS_HOME ?= ${PWD}/lib/DARWIN.gfortran/sundials/install
 
 #
 # Variables for linking
@@ -61,3 +62,9 @@ FFLAGSEXTRA    =
 #!!!Local Variables:
 #!!! mode: Makefile
 #!!! End:
+
+FFLAGSEXTRA = \
+	-L${SUNDIALS_HOME}/lib \
+	-lsundials_fcore_mod \
+	-lsundials_fcvode_mod \
+	-lsundials_fkinsol_mod

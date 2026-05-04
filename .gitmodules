@@ -7,7 +7,7 @@
 
 [submodule "B2.5"]
 	path = modules/B2.5
-	url = ../B2.5.git
+	url = https://github.com/yhu1729/B2.5.git
 	branch = feature/timestep-refactor
 [submodule "Carre"]
 	path = modules/Carre
